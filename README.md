@@ -1,6 +1,6 @@
 # 102-git-workshop
 
-## Step 1 - Installing GitHub Desktop
+## Installing GitHub Desktop
 
 `git` is the name of the tool itself, but there are many application  that add a gui on top of `git`.
 Because `git` is very visual, using a frontend will make it much easier for us to understand what is going on.
@@ -9,7 +9,7 @@ For this tutorial, we are going to be using [Github Desktop](https://desktop.git
 
 Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
 
-## Step 2 - Creating your First Repo
+## Creating your First Repo
 
 Now that you have the GitHub Desktop application installed, we are going to create our first repository!
 
@@ -31,7 +31,7 @@ In the end, your repository should look like this:
 
 Change the local path if desired, and hit Create Repository!
 
-## Step 3 - Creating Files in our Repo
+## Creating Files in our Repo
 
 You should have a new folder named `csci-101-102-labs` in wherever you created the repository with a file called `READEME.md` in it.
 This is just like any folder on our computer, and we can add any files to it.
@@ -44,7 +44,7 @@ However, we are typically dealing with code in our `git` repository, so lets cre
 
 As you can see, this folder is just like other folders on your computer, but `git` is keeping tack of some things for you behind the scenes
 
-## Step 4 - Seeing our changes in GitHub Desktop
+## Seeing our changes in GitHub Desktop
 
 1. Navigate back to the GitHub Desktop application
 
@@ -58,7 +58,7 @@ This view lets you see the changes that you have made to files that are differen
 On the left, you have a list of all of the files you have changed. The checkbox next to them means that they are **staged**, so when you commit, the files will be added to the commit.
 If you have multiple files that you have changed, you can view the changes of a specific file by clicking on it to the left.
 
-### Step 4.1 - Committing
+### Committing
 
 We can go ahead and 'commit' our change. This means that `git` will remember what the files look like in our repository at this snapshot in time.
 Put your commit message in the box that currently says "Create hello.py".
