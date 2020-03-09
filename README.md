@@ -15,7 +15,7 @@ Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop
 
 Now that you have the GitHub Desktop application installed, we are going to create our first repository!
 
-> Note, currently, this will **just** are repository local to your computer.
+> Note, currently, this will **just** create a repository local to your computer.
 > Even though this tool is called "GitHub Desktop" your code is **not** on GitHub, that will be another step down the line.
 
 On **macOS**, go to File -> New Repository...
