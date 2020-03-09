@@ -9,7 +9,7 @@ If that means nothing to you, you should probably use GitHub Desktop!
 
 ### Installing GitHub Desktop
 
-`git` is the name of the tool itself, but there are many application  that add a gui on top of `git`.
+`git` is the name of the tool itself, but there are many applications that add a gui (graphical user interface) on top of `git`.
 Because `git` is very visual, using a front-end will make it much easier for us to understand what is going on.
 There are many front-ends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
 For this tutorial, we are going to be using [Github Desktop](https://desktop.github.com/).
