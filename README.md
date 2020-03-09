@@ -26,10 +26,8 @@ Now that you have the GitHub Desktop application installed, we are going to crea
 > Note, currently, this will **just** create a repository local to your computer.
 > Even though this tool is called "GitHub Desktop" your code is **not** on GitHub, that will be another step down the line.
 
-On **macOS**, go to File -> New Repository...
-
-On **Windows** TODO what do you do on windows
-
+1. Open GitHub Desktop from where you downloaded / installed it to
+1. File -> New Repository...
 1. Naming is up to you, but later on we are going to be adding our old 101 / 102 labs, so I suggest something like `csci-101-102-labs`.
 1. Change the Local Path to something you can easily find - I suggest the Desktop for this project
 1. Check the box next to 'Initialize this project with a README'
