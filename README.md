@@ -9,7 +9,10 @@ Because `git` is very visual, using a frontend will make it much easier for us t
 There are many frontends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
 For this tutorial, we are going to be using [Github Desktop](https://desktop.github.com/).
 
-Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
+1. If you do not have one already, create an account on GitHub by going to [github.com](github.com) and clicking on "Sign up" in the upper right hand corner. I suggest using your personal email, so you can keep projects that are not for school here as well.
+1. Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
+1. After opening GitHub Deskop, sign into your GitHub account
+1. You can configure how you would like to appear, but I suggest keeping the defaults.
 
 ### Creating your First Repo
 
