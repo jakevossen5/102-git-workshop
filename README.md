@@ -57,17 +57,16 @@ Navigate back to the GitHub Desktop application, your screen should look somethi
 
 There are a number of different views we can see here
 
-* The 'main' view on the left that shows the difference between your changes and the last commit
+* The 'main' view on the right that shows the difference between your changes and the last commit
 * The files you have changed on the left. The checkbox being checked means the file is **staged** and will be a part of the next commit. Selecting a file here will bring it into the main view, and you can see the changes made to that file
 * The bottom left is where you add a message and optional description to your commit
 
 #### Committing
 
 We can go ahead and 'commit' our change. This means that `git` will remember what the files look like in our repository at this snapshot in time.
-Put your commit message in the box that currently says "Create hello.py".
-This message should be something that is useful for future programmers who have to analyze it.
-You can put any text here, I would suggest something like "created a hello world file".
-Then, go ahead and hit the "Commit to master".
+1. Put your commit message in the box that currently says "Create hello.py". This message should be something that is useful for future programmers who have to analyze it. You can put any text here, I would suggest something like "created a hello world file".
+1. Then, go ahead and hit the "Commit to master". 
+
 You should now see "no local changes" in your GitHub Desktop.
 
 ### Making changes
