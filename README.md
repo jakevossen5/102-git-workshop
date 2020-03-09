@@ -11,7 +11,7 @@ If that means nothing to you, you should probably use GitHub Desktop!
 
 `git` is the name of the tool itself, but there are many application  that add a gui on top of `git`.
 Because `git` is very visual, using a front-end will make it much easier for us to understand what is going on.
-There are many frontends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
+There are many front-ends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
 For this tutorial, we are going to be using [Github Desktop](https://desktop.github.com/).
 
 1. If you do not have one already, create an account on GitHub by going to [github.com](github.com) and clicking on "Sign up" in the upper right hand corner. I suggest using your personal email, so you can keep projects that are not for school here as well.
@@ -110,5 +110,7 @@ Now, you can open `hello.py` again in IDLE, and you should see that it is back t
 ### Submission
 
 Please submit canvas a screenshot of the history page.
+
+If you used the `git` command line, you can run `git log > gitlog.txt` and submit the resulting text file.
 
 ## Week 2 Assignment
