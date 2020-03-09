@@ -5,7 +5,7 @@
 ### Installing GitHub Desktop
 
 `git` is the name of the tool itself, but there are many application  that add a gui on top of `git`.
-Because `git` is very visual, using a frontend will make it much easier for us to understand what is going on.
+Because `git` is very visual, using a front-end will make it much easier for us to understand what is going on.
 There are many frontends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
 For this tutorial, we are going to be using [Github Desktop](https://desktop.github.com/).
 
@@ -18,7 +18,7 @@ For this tutorial, we are going to be using [Github Desktop](https://desktop.git
 
 Now that you have the GitHub Desktop application installed, we are going to create our first repository!
 
-> Note, currently, this will **just** are repository local to your computer.
+> Note, currently, this will **just** create a repository local to your computer.
 > Even though this tool is called "GitHub Desktop" your code is **not** on GitHub, that will be another step down the line.
 
 On **macOS**, go to File -> New Repository...
