@@ -2,14 +2,22 @@
 
 ## Week 1 Assignment
 
+### **FOR PEOPLE WHO ALREADY KNOW GIT**
+
+If you have a lot of experience using the `git` command line and don't want to learn a new client, you can follow along with this lab and submit a `git log > gitlog.txt` instead of a screenshot.
+If that means nothing to you, you should probably use GitHub Desktop!
+
 ### Installing GitHub Desktop
 
 `git` is the name of the tool itself, but there are many applications that add a gui (graphical user interface) on top of `git`.
 Because `git` is very visual, using a front-end will make it much easier for us to understand what is going on.
-There are many frontends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
+There are many front-ends for `git` (such as [gitkraken](https://www.gitkraken.com/), [fork](https://git-fork.com/), and [TortoiseGit](https://tortoisegit.org/)).
 For this tutorial, we are going to be using [Github Desktop](https://desktop.github.com/).
 
-Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
+1. If you do not have one already, create an account on GitHub by going to [github.com](github.com) and clicking on "Sign up" in the upper right hand corner. I suggest using your personal email, so you can keep projects that are not for school here as well.
+1. Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
+1. After opening GitHub Deskop, sign into your GitHub account
+1. You can configure how you would like to appear, but I suggest keeping the defaults.
 
 ### Creating your First Repo
 
@@ -54,17 +62,16 @@ Navigate back to the GitHub Desktop application, your screen should look somethi
 
 There are a number of different views we can see here
 
-* The 'main' view on the left that shows the difference between your changes and the last commit
+* The 'main' view on the right that shows the difference between your changes and the last commit
 * The files you have changed on the left. The checkbox being checked means the file is **staged** and will be a part of the next commit. Selecting a file here will bring it into the main view, and you can see the changes made to that file
 * The bottom left is where you add a message and optional description to your commit
 
 #### Committing
 
 We can go ahead and 'commit' our change. This means that `git` will remember what the files look like in our repository at this snapshot in time.
-Put your commit message in the box that currently says "Create hello.py".
-This message should be something that is useful for future programmers who have to analyze it.
-You can put any text here, I would suggest something like "created a hello world file".
-Then, go ahead and hit the "Commit to master".
+1. Put your commit message in the box that currently says "Create hello.py". This message should be something that is useful for future programmers who have to analyze it. You can put any text here, I would suggest something like "created a hello world file".
+1. Then, go ahead and hit the "Commit to master". 
+
 You should now see "no local changes" in your GitHub Desktop.
 
 ### Making changes
@@ -99,5 +106,11 @@ You should see a new commit added to the history that says "Revert (your commit 
 ![revert](revert.png)
 
 Now, you can open `hello.py` again in IDLE, and you should see that it is back to just `print("Hello world, but in git!")`.
+
+### Submission
+
+Please submit canvas a screenshot of the history page.
+
+If you used the `git` command line, you can run `git log > gitlog.txt` and submit the resulting text file.
 
 ## Week 2 Assignment
