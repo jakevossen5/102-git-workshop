@@ -1,6 +1,8 @@
 # 102-git-workshop
 
-## Installing GitHub Desktop
+## Week 1 Assignment
+
+### Installing GitHub Desktop
 
 `git` is the name of the tool itself, but there are many application  that add a gui on top of `git`.
 Because `git` is very visual, using a frontend will make it much easier for us to understand what is going on.
@@ -9,7 +11,7 @@ For this tutorial, we are going to be using [Github Desktop](https://desktop.git
 
 Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
 
-## Creating your First Repo
+### Creating your First Repo
 
 Now that you have the GitHub Desktop application installed, we are going to create our first repository!
 
@@ -31,7 +33,7 @@ In the end, your repository should look like this:
 
 Change the local path if desired, and hit "Create Repository"!
 
-## Creating Files in our Repo
+### Creating Files in our Repo
 
 You should have a new folder named `csci-101-102-labs` in wherever you created the repository with a file called `READEME.md` in it.
 This is just like any folder on our computer, and we can add any files to it.
@@ -44,7 +46,7 @@ However, we are typically dealing with code in our `git` repository, so lets cre
 
 As you can see, this folder is just like other folders on your computer, but `git` is keeping tack of some things for you behind the scenes
 
-## Seeing our changes in GitHub Desktop
+### Seeing our changes in GitHub Desktop
 
 Navigate back to the GitHub Desktop application, your screen should look something like this:
 
@@ -56,7 +58,7 @@ There are a number of different views we can see here
 * The files you have changed on the left. The checkbox being checked means the file is **staged** and will be a part of the next commit. Selecting a file here will bring it into the main view, and you can see the changes made to that file
 * The bottom left is where you add a message and optional description to your commit
 
-### Committing
+#### Committing
 
 We can go ahead and 'commit' our change. This means that `git` will remember what the files look like in our repository at this snapshot in time.
 Put your commit message in the box that currently says "Create hello.py".
@@ -65,7 +67,7 @@ You can put any text here, I would suggest something like "created a hello world
 Then, go ahead and hit the "Commit to master".
 You should now see "no local changes" in your GitHub Desktop.
 
-## Making changes
+### Making changes
 
 Go back to your `hello.py` file and add a second line that prints 'It is not a bug, it is a feature'.
 Your `hello.py` should look like this now:
@@ -82,7 +84,7 @@ Back on GitHub Desktop, your screen should look like this
 Here we can see what is called a **diff** view, and compare the changes we have made since our last commit.
 Go ahead and give this a descriptive commit message, and commit to master.
 
-## Reverting changes
+### Reverting changes
 
 Down the line, it turns out that the change you just made is destroying the production database.
 Luckily, because we are using `git`, we can easily revert to any version of our software, so we can revert it to a known working state.
@@ -97,3 +99,5 @@ You should see a new commit added to the history that says "Revert (your commit 
 ![revert](revert.png)
 
 Now, you can open `hello.py` again in IDLE, and you should see that it is back to just `print("Hello world, but in git!")`.
+
+## Week 2 Assignment
