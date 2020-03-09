@@ -2,6 +2,11 @@
 
 ## Week 1 Assignment
 
+### **FOR PEOPLE WHO ALREADY KNOW GIT**
+
+If you have a lot of experience using the `git` command line and don't want to learn a new client, you can follow along with this lab and submit a `git log > gitlog.txt` instead of a screenshot.
+If that means nothing to you, you should probably use GitHub Desktop!
+
 ### Installing GitHub Desktop
 
 `git` is the name of the tool itself, but there are many application  that add a gui on top of `git`.
@@ -101,5 +106,9 @@ You should see a new commit added to the history that says "Revert (your commit 
 ![revert](revert.png)
 
 Now, you can open `hello.py` again in IDLE, and you should see that it is back to just `print("Hello world, but in git!")`.
+
+### Submission
+
+Please submit canvas a screenshot of the history page.
 
 ## Week 2 Assignment
