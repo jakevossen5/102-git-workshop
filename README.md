@@ -105,10 +105,127 @@ You should see a new commit added to the history that says "Revert (your commit 
 
 Now, you can open `hello.py` again in IDLE, and you should see that it is back to just `print("Hello world, but in git!")`.
 
-### Submission
+### Submission for Week 1
 
 Please submit canvas a screenshot of the history page.
 
 If you used the `git` command line, you can run `git log > gitlog.txt` and submit the resulting text file.
 
 ## Week 2 Assignment
+
+<!-- Goals:
+Creating / pushing to remote repository
+Not commit certain files / staging
+Add gitignore -->
+
+Now that we have our git repository local to our computer, the next step is going to be making it available via GitHub.
+Because we are using GitHub desktop, this will be really easy!
+
+1. If you don't have it open already, open GitHub desktop. If the repository we created last week is not what is listed in the very top left, click on it and select the name of the repo you created last week.
+1. On the top menu bar, click on the option that says "Publish this Repository"
+1. All of the default settings should be fine, but it is **very** important that your code is **private**, because we will be uploading our 101 and 102 labs to here
+
+![What it should look like before you hit publish](publish-repo.png)
+
+Go ahead and click on "Publish Repository" now.
+
+We are going to view our code on the GitHub website.
+This will make it clear what is on our local repo, and what has been pushed to master.
+You can do this by navigating to `https://github.com/<yourusername>/csci-101-102-labs`.
+Right now, it should look identical to what you have to the code in your local repository.
+If you try and visit it and you get a "page not found error", sign into GitHub and try again.
+It should look something like this.
+
+![Initial GitHub](inital-github.png)
+
+### Adding our Python Code
+
+So we have a large number of files to work with, we are going to be adding our old 101 and 102 labs to this local repository.
+
+1. Create two folders, a `101` and a `102` folder from Finder / File explorer
+1. Move your 101 labs to the 101 folder, and your 102 labs to your 102 folder
+1. Open GitHub Desktop
+1. Select all of your **101** labs only on the left hand side (remember, what is selected is what is staged for commit)
+1. In the commit summary area, write something like 'added 101 labs'
+1. Verify that your GitHub Desktop looks something similar to mine. I don't have all of the 101 and 102 labs, so the number of files / the name of your files should vary from mine.
+
+![101 selected only](101-selected-only.png)
+
+Lets stop a minute and think about what we do before we hit 'commit to master'.
+As we discussed earlier, committing creates a snapshot of our files look like at this current time.
+This means that the content of the files that we have staged right now are going to be saved by `git` forever.
+With that being said, go ahead and press 'commit to master'
+
+### Syncing with GitHub
+
+Sign back into GitHub and go to your `csci-101-102-labs` repository.
+Look at the files are there. Are they what you expected?
+They should not have changed since the last time you looked at GitHub, this is because when we commit we are **only making changes to our local repository**
+
+How do we make our code available on GitHub?
+This is called pushing.
+You can push to GitHub from GitHub Desktop by pressing the "Push origin" on the top bar.
+
+Now, refresh `github.com/<yourusername>/csci-101-102-labs`.
+You should see something like this.
+
+![Github after adding 101](github-after-101.png)
+
+Take a few minutes and think about what this means.
+Our `101` folder is here, but our `102` folder is not.
+This is because we only commited the changes to our `101` folder.
+
+### Trying it on your own
+
+1. On your own, add your 102 labs, commit, and push.
+1. Verify that what you see at `github.com/<yourusername>/csci-101-102-labs` is the same as what you see on GitHub Desktop, and you have no uncommitted changes on the left.
+
+### Using a `.gitignore`
+
+What should we do about files that are in our repository but we don't want `git` to ever commit them?
+Sure, we can make sure that we never check the check box in GitHub Desktop, but that is annoying, and maybe you have a lot of files / a whole folder you want to ignore.
+
+> Side note: in practice, this is most often used to stop having binary files in your `git` repository.
+> Binary files are the name for the actual machine code instructions for your computer runs when you run a program.
+> `git` works because it just tracks the difference between files, but because binary files are not plain text, `git` would have to save the binary exactly as you generated it each time.
+> This will quickly make our `git` repositories become very large, and theoretically the source code should contain everything needed to generate that binary anyways, so it is not adding any additional information.
+> Because Python is an [interpreted](https://en.wikipedia.org/wiki/Interpreted_language) language, it creates no binaries.
+
+In this scenario, we want to put the 101 course topics in the same folder but we don't want it to be part of our `git` repository (in reality a small PDF is not a concerning thing to have in a `git` repository)
+
+1. Download the 101 course topics [here](http://cs-courses.mines.edu/csci101/static/101-Topics.pdf)
+1. Place that PDF in your `csci-101-102-labs` folder on your computer
+1. Open GitHub Desktop, and open the repository if it is not open already
+1. You should see the PDF on the left sidebar of GitHub Desktop. Right click on it and select "ignore file". Notice how GitHub Desktop allows you to ignore all PDFs if we wanted to.
+
+Your GitHub Desktop should now look something like this:
+
+![After ignoring pdf](after-ignore.png)
+
+Now, you can see that GitHub Desktop modified out `.gitignore` for us.
+A `.gitignore` is a plain text file that tells `git` which files not to ever track.
+By adding `101-Topics.pdf`, `git` will ignore any file with that exact name.
+If you remember when we first created this repository, we asked GitHub Desktop to use a Python `.gitignore` for us, which is why there are other lines in this file.
+
+`.gitignore` is a file that is tracked by `git`, so lets go ahead and commit with some message similar to "added 101 topics to the gitignore", then push.
+
+Now, go to GitHub and look at what files GitHub has.
+Note that this does not include the `101-Topics.pdf`.
+If someone where to come and download your repository, `101-Topics.pdf` would not be downloaded with it - it only exists on your own computer.
+
+#### When to add something to your `.gitignore`
+
+There is not 100% guide for when to add something to your `.gitignore`, but here are some rules of thumbs that I find usefull.
+
+* If it is a file that can be generated completly from other files, aka output files
+* If it is a large binary file that is frequently changing
+* Temporary / other generated files
+
+In general, if you select the `.gitignore` when creating your repository for the language you are using (if you forget you can download them here: [https://github.com/github/gitignore](https://github.com/github/gitignore)), you should typically be okay.
+Nothing you do in CSCI 101 or 102 is heavy enough that you have to worry about the sizes of your `git` repositories.
+
+### Submission for Week 2
+
+Please submit canvas a screenshot of the history page.
+
+If you used the `git` command line, you can run `git log > gitlog.txt` and submit the resulting text file.
