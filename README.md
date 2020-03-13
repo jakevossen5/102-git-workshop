@@ -123,7 +123,7 @@ Because we are using GitHub desktop, this will be really easy!
 
 1. If you don't have it open already, open GitHub desktop. If the repository we created last week is not what is listed in the very top left, click on it and select the name of the repo you created last week.
 1. On the top menu bar, click on the option that says "Publish this Repository"
-1. All of the default settings should be fine, but it is <hl> **very important that your code is private** </hl>, because we will be uploading our 101 and 102 labs to here
+1. All of the default settings should be fine, but it is **_very important that your code is private_**, because we will be uploading our 101 and 102 labs to here
 
 ![What it should look like before you hit publish](publish-repo.png)
 
