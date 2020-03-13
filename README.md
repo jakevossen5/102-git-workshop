@@ -123,7 +123,7 @@ Because we are using GitHub desktop, this will be really easy!
 
 1. If you don't have it open already, open GitHub desktop. If the repository we created last week is not what is listed in the very top left, click on it and select the name of the repo you created last week.
 1. On the top menu bar, click on the option that says "Publish this Repository"
-1. All of the default settings should be fine, but it is **very** important that your code is **private**, because we will be uploading our 101 and 102 labs to here
+1. All of the default settings should be fine, but it is <hl> **very important that your code is private** </hl>, because we will be uploading our 101 and 102 labs to here
 
 ![What it should look like before you hit publish](publish-repo.png)
 
@@ -132,7 +132,7 @@ Go ahead and click on "Publish Repository" now.
 We are going to view our code on the GitHub website.
 This will make it clear what is on our local repo, and what has been pushed to master.
 You can do this by navigating to `https://github.com/<yourusername>/csci-101-102-labs`.
-Right now, it should look identical to what you have to the code in your local repository.
+Right now, it should look identical to the code you have in your local repository.
 If you try and visit it and you get a "page not found error", sign into GitHub and try again.
 It should look something like this.
 
@@ -143,7 +143,7 @@ It should look something like this.
 So we have a large number of files to work with, we are going to be adding our old 101 and 102 labs to this local repository.
 
 1. Create two folders, a `101` and a `102` folder from Finder / File explorer
-1. Move your 101 labs to the 101 folder, and your 102 labs to your 102 folder
+1. **Copy** your 101 labs to the 101 folder, and your 102 labs to your 102 folder
 1. Open GitHub Desktop
 1. Select all of your **101** labs only on the left hand side (remember, what is selected is what is staged for commit)
 1. In the commit summary area, write something like 'added 101 labs'
@@ -152,7 +152,7 @@ So we have a large number of files to work with, we are going to be adding our o
 ![101 selected only](101-selected-only.png)
 
 Lets stop a minute and think about what we do before we hit 'commit to master'.
-As we discussed earlier, committing creates a snapshot of our files look like at this current time.
+As we discussed earlier, committing creates a snapshot of what our files look like at this current time.
 This means that the content of the files that we have staged right now are going to be saved by `git` forever.
 With that being said, go ahead and press 'commit to master'
 
