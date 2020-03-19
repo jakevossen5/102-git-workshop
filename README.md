@@ -16,7 +16,7 @@ For this tutorial, we are going to be using [Github Desktop](https://desktop.git
 
 1. If you do not have one already, create an account on GitHub by going to [github.com](github.com) and clicking on "Sign up" in the upper right hand corner. I suggest using your personal email, so you can keep projects that are not for school here as well.
 1. Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
-1. After opening GitHub Deskop, sign into your GitHub account
+1. After opening GitHub Desktop, sign into your GitHub account
 1. You can configure how you would like to appear, but I suggest keeping the defaults.
 
 ### Creating your First Repo
@@ -215,9 +215,9 @@ If someone where to come and download your repository, `101-Topics.pdf` would no
 
 #### When to add something to your `.gitignore`
 
-There is not 100% guide for when to add something to your `.gitignore`, but here are some rules of thumbs that I find usefull.
+There is not 100% guide for when to add something to your `.gitignore`, but here are some rules of thumbs that I find useful.
 
-* If it is a file that can be generated completly from other files, aka output files
+* If it is a file that can be generated completely from other files, aka output files
 * If it is a large binary file that is frequently changing
 * Temporary / other generated files
 
