@@ -1,6 +1,6 @@
 # 102-git-workshop
 
-## Week 1 Assignment
+## Assignment Part 1
 
 ### **FOR PEOPLE WHO ALREADY KNOW GIT**
 
@@ -31,7 +31,7 @@ Now that you have the GitHub Desktop application installed, we are going to crea
 1. Naming is up to you, but later on we are going to be adding our old 101 / 102 labs, so I suggest something like `csci-101-102-labs`.
 1. Change the Local Path to something you can easily find - I suggest the Desktop for this project
 1. Check the box next to 'Initialize this project with a README'
-1. Select `Python` under the 'Git Ignore' - we will talk more about `git` ignore files more next week
+1. Select `Python` under the 'Git Ignore' - we will talk more about `git` ignore files more next in the next part
 
 In the end, your repository should look like this:
 
@@ -50,7 +50,7 @@ However, we are typically dealing with code in our `git` repository, so lets cre
 1. Save the file into where the repository was created, naming it `hello.py`
 1. Verify that you have two files (`hello.py`, `README.md`) inside a folder titled `csci-101-102-labs`
 
-As you can see, this folder is just like other folders on your computer, but `git` is keeping tack of some things for you behind the scenes
+As you can see, this folder is just like other folders on your computer, but `git` is keeping track of some things for you behind the scenes
 
 ### Seeing our changes in GitHub Desktop
 
@@ -105,13 +105,13 @@ You should see a new commit added to the history that says "Revert (your commit 
 
 Now, you can open `hello.py` again in IDLE, and you should see that it is back to just `print("Hello world, but in git!")`.
 
-### Submission for Week 1
+### Submission for part 1
 
 Please submit canvas a screenshot of the history page.
 
-If you used the `git` command line, you can run `git log > gitlog.txt` and submit the resulting text file.
+If you used the `git` from the command line, you can run `git log > gitlog.txt` and submit the resulting text file.
 
-## Week 2 Assignment
+## Assignment Part 2
 
 <!-- Goals:
 Creating / pushing to remote repository
@@ -121,7 +121,7 @@ Add gitignore -->
 Now that we have our git repository local to our computer, the next step is going to be making it available via GitHub.
 Because we are using GitHub desktop, this will be really easy!
 
-1. If you don't have it open already, open GitHub desktop. If the repository we created last week is not what is listed in the very top left, click on it and select the name of the repo you created last week.
+1. If you don't have it open already, open GitHub desktop. If the repository we created in the previous part is not what is listed in the very top left, click on it and select the name of the repo you created in the previous part.
 1. On the top menu bar, click on the option that says "Publish this Repository"
 1. All of the default settings should be fine, but it is **_very important that your code is private_**, because we will be uploading our 101 and 102 labs to here
 
@@ -224,8 +224,8 @@ There is not 100% guide for when to add something to your `.gitignore`, but here
 In general, if you select the `.gitignore` when creating your repository for the language you are using (if you forget you can download them here: [https://github.com/github/gitignore](https://github.com/github/gitignore)), you should typically be okay.
 Nothing you do in CSCI 101 or 102 is heavy enough that you have to worry about the sizes of your `git` repositories.
 
-### Submission for Week 2
+### Submission for part 2
 
 Please submit canvas a screenshot of the history page.
 
-If you used the `git` command line, you can run `git log > gitlog.txt` and submit the resulting text file.
+If you used the `git` from the command line, you can run `git log > gitlog.txt` and submit the resulting text file.
