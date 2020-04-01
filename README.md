@@ -1,11 +1,6 @@
 # 102-git-workshop
 
-## Assignment Part 1
-
-### **FOR PEOPLE WHO ALREADY KNOW GIT**
-
-If you have a lot of experience using the `git` command line and don't want to learn a new client, you can follow along with this lab and submit a `git log > gitlog.txt` instead of a screenshot.
-If that means nothing to you, you should probably use GitHub Desktop!
+## Pre-Studio class work
 
 ### Installing GitHub Desktop
 
@@ -18,6 +13,13 @@ For this tutorial, we are going to be using [Github Desktop](https://desktop.git
 1. Install GitHub Desktop by going to [https://desktop.github.com/](https://desktop.github.com/).
 1. After opening GitHub Desktop, sign into your GitHub account
 1. You can configure how you would like to appear, but I suggest keeping the defaults.
+
+### **FOR PEOPLE WHO ALREADY KNOW GIT**
+
+If you have a lot of experience using the `git` command line and don't want to learn a new client, you can follow along with this lab and submit a `git log > gitlog.txt` instead of a screenshot.
+If that means nothing to you, you should probably use GitHub Desktop!
+
+## During Studio
 
 ### Creating your First Repo
 
@@ -67,8 +69,9 @@ There are a number of different views we can see here
 #### Committing
 
 We can go ahead and 'commit' our change. This means that `git` will remember what the files look like in our repository at this snapshot in time.
+
 1. Put your commit message in the box that currently says "Create hello.py". This message should be something that is useful for future programmers who have to analyze it. You can put any text here, I would suggest something like "created a hello world file".
-1. Then, go ahead and hit the "Commit to master". 
+1. Then, go ahead and hit the "Commit to master".
 
 You should now see "no local changes" in your GitHub Desktop.
 
@@ -105,18 +108,13 @@ You should see a new commit added to the history that says "Revert (your commit 
 
 Now, you can open `hello.py` again in IDLE, and you should see that it is back to just `print("Hello world, but in git!")`.
 
-### Submission for part 1
+### Submission for during class assignment
 
 Please submit canvas a screenshot of the history page.
 
 If you used the `git` from the command line, you can run `git log > gitlog.txt` and submit the resulting text file.
 
-## Assignment Part 2
-
-<!-- Goals:
-Creating / pushing to remote repository
-Not commit certain files / staging
-Add gitignore -->
+## Post-Studio Homework
 
 Now that we have our git repository local to our computer, the next step is going to be making it available via GitHub.
 Because we are using GitHub desktop, this will be really easy!
