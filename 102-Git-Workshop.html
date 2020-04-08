@@ -251,7 +251,8 @@
 
                                 <h4>Submission for in class assignment</h4>
 
-                                Please submit to canvas a screenshot of the history page.
+                                Please submit to canvas a screenshot of the history page to the assignment "Week 12 Git
+                                Log 1".
                                 If you used the <code>git</code> from the command line, you can run
                                 <code>git log &gt; gitlog.txt</code> and submit the resulting text file.
 
@@ -341,82 +342,141 @@
                                             the left.</li>
                                     </ol>
 
-                                    <h4>Using a <code>.gitignore</code></h4>
+                                    <h4>Coding with Git</h4>
 
-                                    What should we do about files that are in our repository but we don’t want
-                                    <code>git</code> to ever commit them? Sure, we can make sure that we never check
-                                    the check box in GitHub Desktop, but that is annoying, and maybe you have a lot
-                                    of files / a whole folder you want to ignore.
-                                    <blockquote>
-                                        Side note: in practice, this is most often used to stop having binary files
-                                        in your <code>git</code> repository. Binary files are the name for the
-                                        actual machine code instructions for your computer runs when you run a
-                                        program. <code>git</code> works because it just tracks the difference
-                                        between files, but because binary files are not plain text, <code>git</code>
-                                        would have to save the binary exactly as you generated it each time. This
-                                        will quickly make our <code>git</code> repositories become very large, and
-                                        theoretically the source code should contain everything needed to generate
-                                        that binary anyways, so it is not adding any additional information. Because
-                                        Python is an <a
-                                            href="https://en.wikipedia.org/wiki/Interpreted_language">interpreted</a>
-                                        language, it creates no binaries.
-                                    </blockquote>
-                                    In this scenario, we want to put the 101 course topics in the same folder but we
-                                    don’t want it to be part of our <code>git</code> repository (in reality a small
-                                    PDF is not a concerning thing to have in a <code>git</code> repository)
-                                    <ol type="1">
-                                        <li>Download the 101 course topics <a
-                                                href="http://cs-courses.mines.edu/csci101/static/101-Topics.pdf">here</a>
+                                    In this lab, you will use GitHub as you develop a Python program. When writing
+                                    several functions for a
+                                    large project, it is valuable to develop the program incrementally, where you
+                                    design, then code, then test,
+                                    then design, then code,
+                                    then test, etc. This software development model is referred to as the
+                                    <a href="https://en.wikipedia.org/wiki/Incremental_build_model">incremental build
+                                        model</a>.
+                                    <br><br>
+
+                                    In this lab, where you follow the incremental build software development model, you
+                                    are to
+                                    commit your Python program in git SEVERAL times during its development.
+                                    Specifically, you should develop each function incrementally; once a new function is
+                                    fully developed (after you've tested it), you should push it to your repository.
+                                    Then, at the end of this lab, you should have nine (or more) commits. The first
+                                    commit will
+                                    be when you create your repo and add your <tt>Week12-utility.py</tt> file. The next
+                                    eight
+                                    commits will be after you have fully developed each of the eight functions below.
+                                    (It is
+                                    OK if you end up with more than nine commits.)
+                                    <br><br>
+
+                                    For your <tt>Week12-utility.py</tt> file, define the following utility functions
+                                    (and, again, after each
+                                    function is developed, push it to your repository):
+
+                                    <ol>
+                                        <li> <b>print_output</b>: copy this function from your
+                                            <a href="http://cs-courses.mines.edu/csci102/Labs/Week11.html">Week 11</a>
+                                            lab.
+                                            Here's an example of using this function: <br>
+                                            <tt>
+                                                &gt;&gt;&gt; print_output("Hello World") <br>
+                                                OUTPUT Hello World
+                                            </tt>
                                         </li>
-                                        <li>Place that PDF in your <code>csci-101-102-labs</code> folder on your
-                                            computer</li>
-                                        <li>Open GitHub Desktop, and open the repository if it is not open already</li>
-                                        <li>You should see the PDF on the left sidebar of GitHub Desktop. Right click on
-                                            it and select “ignore file”. Notice how GitHub Desktop allows you to ignore
-                                            all PDFs if we wanted to.</li>
+                                        <li> <b>load_file</b> is a function that takes in a string (a filename) and then
+                                            returns a list. The
+                                            list is the contents of the file, where each element is a list of data from
+                                            the file.
+                                            Here's an example of using this function. The input file had four lines of
+                                            text.<br>
+                                            <tt>
+                                                &gt;&gt;&gt; lines = load_file("test.txt") <br>
+                                                &gt;&gt;&gt; print("OUTPUT", lines) <br>
+                                                OUTPUT ["Hello there", "I am a test file", "please load me in and print
+                                                me out", "Thanks"]
+                                            </tt>
+                                        </li>
+                                        <li> <b>update_string</b> is a function that takes in two strings and an index
+                                            integer (no return).
+                                            The function should print a string that is the first string modified to
+                                            replace the
+                                            character at the index provided with the second string.
+                                            (Remember that strings are immutable, i.e., <tt>some_string[5] = 'a'</tt>
+                                            will give you an error.)
+                                            Here's an example of using this function:<br>
+                                            <tt>
+                                                &gt;&gt;&gt; update_string("Hello World", "a", 3) <br>
+                                                OUTPUT Helao World
+                                            </tt>
+                                        </li>
+                                        <li> <b>find_word_count</b> is a function that takes in a
+                                            list and a string. The function then returns the number of occurances of the
+                                            string in the list.
+                                            Here's an example of using this function:<br>
+                                            <tt>
+                                                &gt;&gt;&gt; a = LoadFile("alice.txt") <br>
+                                                &gt;&gt;&gt; print_output(str(find_word_count(a, "Alice")))<br>
+                                                OUTPUT 403
+                                            </tt>
+                                        </li>
+                                        <li> <b>score_finder</b> is a function that takes in two lists and a string.
+                                            The first list is a list of strings (player names), the second list is a
+                                            list of floats (player scores),
+                                            and the string is a name (player to find). If the player to find exists in
+                                            the list of player names,
+                                            then print the name of that player along with their associated score (which
+                                            is in the second list at the
+                                            same index). If the player to find does not exist in the list of player
+                                            names, print <tt>player not found</tt>.
+                                            Here are two examples of using this function:<br>
+                                            <tt>
+                                                &gt;&gt;&gt; players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+                                                <br>
+                                                &gt;&gt;&gt; scores = [5, 8, 10, 6, 10, 4] <br>
+                                                &gt;&gt;&gt; score_finder(players, scores, "jill") % NOTE: upper and
+                                                lowercase should both work <br>
+                                                OUTPUT Jill got a score of 6 <br>
+                                                &gt;&gt;&gt; score_finder(players, scores, "Manuel") <br>
+                                                OUTPUT player not found
+                                            </tt>
+                                        </li>
+                                        <li> <b>union</b> takes in two lists and returns a single list that is the union
+                                            of the two lists
+                                            (i.e., return all values of the lists A and B with no duplicates).
+                                            Here's an example of using this function:<br>
+                                            <tt>
+                                                &gt;&gt;&gt; players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+                                                <br>
+                                                &gt;&gt;&gt; print("OUTPUT", union(scores, players2)) <br>
+                                                OUTPUT [5, 8, 10, 6, 4, "Melvin", "Martian", "Baka", "Xai", "Cody"]
+                                            </tt>
+                                        </li>
+
+                                        <li> <b>intersection</b> takes in two lists and returns a single list that is
+                                            the intersection of the two lists
+                                            (i.e., return all values of the lists A and B that are in both A and B).
+                                            Here's an example of using this function:<br>
+                                            <tt>
+                                                print("OUTPUT", intersection(players, players2)) <br>
+                                                &gt;&gt;&gt; OUTPUT ["Cody", "Xai"]
+                                            </tt>
+                                        </li>
+                                        <li> <b>not_in</b> takes in two lists and returns a single list that is all
+                                            values in the first list that are NOT
+                                            in the second list. Here's an example of using this function:<br>
+                                            <tt>
+                                                &gt;&gt;&gt; print("OUTPUT", not_in(players2, players)) <br>
+                                                OUTPUT ["Melvin", "Martian", "Baka"]
+                                            </tt>
+                                        </li>
                                     </ol>
-                                    Your GitHub Desktop should now look something like this:
-                                    <figure>
-                                        <img style="max-width: 100%;" src="after-ignore.png" alt="" />
-                                    </figure>
-                                    Now, you can see that GitHub Desktop modified out <code>.gitignore</code> for us.
-                                    A <code>.gitignore</code> is a plain text file that tells <code>git</code> which
-                                    files not to ever track. By adding <code>101-Topics.pdf</code>, <code>git</code>
-                                    will ignore any file with that exact name. If you remember when we first created
-                                    this repository, we asked GitHub Desktop to use a Python <code>.gitignore</code>
-                                    for us, which is why there are other lines in this file.
-                                    <code>.gitignore</code> is a file that is tracked by <code>git</code>, so lets go
-                                    ahead and commit with some message similar to “added 101 topics to the
-                                    gitignore”, then push.
-                                    Now, go to GitHub and look at what files GitHub has. Note that this does not
-                                    include the <code>101-Topics.pdf</code>. If someone where to come and download
-                                    your repository, <code>101-Topics.pdf</code> would not be downloaded with it -
-                                    it only exists on your own computer.
 
-                                    <h5 id="when-to-add-something-to-your-.gitignore">When to add something to your
-                                        <code>.gitignore</code></h5>
+                                    <h4>Submission for C</h4>
 
-                                    There is not 100% guide for when to add something to your
-                                    <code>.gitignore</code>, but here are some rules of thumbs that I find useful.
-
-                                    <ul>
-                                        <li>If it is a file that can be generated completely from other files, aka
-                                            output files</li>
-                                        <li>If it is a large binary file that is frequently changing</li>
-                                        <li>Temporary / other generated files</li>
-                                    </ul>
-                                    In general, if you select the <code>.gitignore</code> when creating your
-                                    repository for the language you are using (if you forget you can download them
-                                    here: <a
-                                        href="https://github.com/github/gitignore">https://github.com/github/gitignore</a>),
-                                    you should typically be okay. Nothing you do in CSCI 101 or 102 is heavy enough
-                                    that you have to worry about the sizes of your <code>git</code> repositories.
-
-                                    <h4>Submission for part 2</h4>
-
-                                    Please submit to canvas a screenshot of the history page.
+                                    Please submit to canvas assignment "Week 12 Git Log 2" a screenshot of the history
+                                    page, and your <code>Week12-utility.py</code> file to "Week 12 Code".
                                     If you used the <code>git</code> from the command line, you can run
-                                    <code>git log &gt; gitlog.txt</code> and submit the resulting text file.
+                                    <code>git log &gt; gitlog.txt</code> and submit the resulting text file instead of a
+                                    screenshot.
 
 
                                 </div>
