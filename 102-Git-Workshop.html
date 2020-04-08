@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20808187-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>-->
+
+    <title>102-Week12</title>
+
+    <link rel="icon" type="image/png" href="http://cs-courses.mines.edu/csci102/Labs/static/course_logo.png">
+    <link rel="stylesheet" type="text/css" href="102-Git-Workshop_files/stylesheet.css">
+
+    <style type="text/css">
+        ul.navigate {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body class="bodyclass">
+    <div style="text-align:center; width:800px; margin:auto;"><a name="top"></a>
+
+        <table width="800" cellspacing="2" cellpadding="2" border="0">
+            <tbody>
+                <tr>
+                    <td style="vertical-align:middle; text-align:center; height:150px; background-color:#ffffff;"
+                        colspan="2">
+                        <h1 style="color:#253E6A;">CSCI 102 - Intro to Computer Science LAB</h1>
+                        <h2 style="color:#253E6A;">Python Assignment: Week 12</h2>
+                        <h2 style="color:#253E6A;">Git</h2>
+
+                        <strong>Quick Links: </strong>
+                        <a href="http://www.zybooks.com/" target="_blank">zyBook</a> |
+                        <a href="https://bartik.mines.edu/" target="_blank">AutoGrader</a> |
+                        <a href="https://piazza.com/" target="_blank">Piazza</a> |
+                        <a href="https://canvas.mines.edu/" target="_blank">Canvas</a> |
+                        <a href="http://cs.mines.edu/" target="_blank">CS @ Mines</a>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="header" style="height:30px;" colspan="2">
+
+                        |&nbsp;<a href="http://cs-courses.mines.edu/csci102/index.html">Home</a>&nbsp;|&nbsp;<a
+                            href="http://cs-courses.mines.edu/csci102/contact.html">Contact</a>&nbsp;|&nbsp;<a
+                            href="http://cs-courses.mines.edu/csci102/schedule.html">Schedule</a>&nbsp;|&nbsp;<a
+                            href="http://cs-courses.mines.edu/csci102/assignments.html">Assignments</a>&nbsp;|&nbsp;<a
+                            href="http://cs-courses.mines.edu/csci102/syllabus.html">Syllabus</a>&nbsp;|
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="mainContent" colspan="2">
+
+                        <hr style="width: 85%; color: #253E6A; border: 1px solid;">
+
+                        <h3>Introduction</h3>
+                        <div style="text-align: justify;">
+                            Welcome to your assignment for Week 10 of CSCI 102! Each week, <i>after Studio</i>, you
+                            should work on that week's homework
+                            assignment (lab). This lab is to be done on your own (not pair programming), and
+                            needs to be completed and shown to an instructor/TA during Demo Day (Tuesday) <i>before</i>
+                            class ends. (NOTE: how we will "demo" is still being determined.)
+                            This work should also be submitted to Canvas <i>before</i>
+                            class ends as well (and no later than 11:45pm that day). Unlike CSCI 101,
+                            we will place all assignments for a given week
+                            on one HTML page. This is your Week 10 CSCI 102 Assignment page.<br> <br>
+
+                            You have TWO problems to do after Studio this week, both of which you will
+                            (1) DEMO during your 102 class on Tuesday (TBD) and (2) SUBMIT to Canvas
+                            (before the end of class). Details on Part A and Part B are below.
+                            <br>
+                        </div>
+
+
+                        <hr style="width: 85%; color: #253E6A; border: 1px solid;">
+
+                        <div style="text-align: justify;">
+                            <h3>Part A: Pre-Studio Class Work (DUE & POINTS HERE)</h3>
+
+                            <h4>Assignment: Installing GitHub Desktop</h4>
+
+                            <div style="text-align: justify;">
+                                <code>git</code> is the name of the tool itself, but there are many applications that
+                                add a gui (graphical user interface) on top of <code>git</code>. Because
+                                <code>git</code> is very visual, using a front-end will make it much easier for us
+                                to understand what is going on. There are many front-ends for <code>git</code> (such
+                                as <a href="https://www.gitkraken.com/">gitkraken</a>, <a
+                                    href="https://git-fork.com/">fork</a>, and <a
+                                    href="https://tortoisegit.org/">TortoiseGit</a>). For this tutorial, we are
+                                going to be using <a href="https://desktop.github.com/">Github Desktop</a>.
+
+                                <ol type="1">
+                                    <li>If you do not have one already, create an account on GitHub by going to <a
+                                            href="github.com">github.com</a> and clicking on “Sign up” in the upper
+                                        right hand corner. I suggest using your personal email, so you can keep projects
+                                        that are not for school here as well.</li>
+                                    <li>Install GitHub Desktop by going to <a
+                                            href="https://desktop.github.com/">https://desktop.github.com/</a>.</li>
+                                    <li>After opening GitHub Desktop, sign into your GitHub account</li>
+                                    <li>You can configure how you would like to appear, but I suggest keeping the
+                                        defaults.</li>
+                                </ol>
+                            </div>
+
+
+
+                            <hr style="width: 85%; color: #253E6A; border: 1px solid;">
+                            <br>
+                            <h3>Part B: During Studio Work (DUE & POINTS HERE)</h3>
+
+
+                            <div style="text-align: justify;">
+
+                                <h4>
+                                    FOR PEOPLE WHO ALREADY KNOW GIT
+                                </h4>
+                                If you have a lot of experience using the <code>git</code> command line and don’t want
+                                to learn a new client, you can follow along with this lab and submit a
+                                <code>git log &gt; gitlog.txt</code> instead of a screenshot. If that means nothing to
+                                you, you should probably use GitHub Desktop!
+
+                                <h4>Creating your First Repo</h4>
+
+                                Now that you have the GitHub Desktop application installed, we are going to create
+                                our first repository!
+                                <blockquote>
+                                    Note, currently, this will <strong>just</strong> create a repository local to
+                                    your computer. Even though this tool is called “GitHub Desktop” your code is
+                                    <strong>not</strong> on GitHub, that will be another step down the line.
+                                </blockquote>
+                                <ol type="1">
+                                    <li>Open GitHub Desktop from where you downloaded / installed it to</li>
+                                    <li>File -&gt; New Repository…</li>
+                                    <li>Naming is up to you, but later on we are going to be adding our old 101 / 102
+                                        labs, so I suggest something like <code>csci-101-102-labs</code>.</li>
+                                    <li>Change the Local Path to something you can easily find - I suggest the Desktop
+                                        for this project</li>
+                                    <li>Check the box next to ‘Initialize this project with a README’</li>
+                                    <li>Select <code>Python</code> under the ‘Git Ignore’ - we will talk more about
+                                        <code>git</code> ignore files more next in the next part</li>
+                                </ol>
+                                In the end, your repository should look like this:
+                                <figure>
+                                    <img style="max-width: 100%;" src="new-repo.png" alt="" />
+                                </figure>
+                                Change the local path if desired, and hit “Create Repository”!
+
+                                <h4>Creating Files in our Repo</h4>
+
+                                You should have a new folder named <code>csci-101-102-labs</code> in wherever you
+                                created the repository with a file called <code>READEME.md</code> in it. This is
+                                just like any folder on our computer, and we can add any files to it. However, we
+                                are typically dealing with code in our <code>git</code> repository, so lets create a
+                                simple Python program to add to our <code>git</code> repo.
+                                <ol type="1">
+                                    <li>Open IDLE and create a new Python program</li>
+                                    <li>Add the contents <code>print("Hello world, but in git!")</code> the file</li>
+                                    <li>Save the file into where the repository was created, naming it
+                                        <code>hello.py</code></li>
+                                    <li>Verify that you have two files (<code>hello.py</code>, <code>README.md</code>)
+                                        inside a folder titled <code>csci-101-102-labs</code></li>
+                                </ol>
+                                As you can see, this folder is just like other folders on your computer, but
+                                <code>git</code> is keeping track of some things for you behind the scenes.
+
+                                <h4>Seeing our changes in GitHub Desktop</h4>
+
+                                Navigate back to the GitHub Desktop application, your screen should look something
+                                like this:
+                                <figure>
+                                    <img style="max-width: 100%;" src="hello-change.png" alt="" />
+
+                                </figure>
+                                There are a number of different views we can see here
+                                <ul>
+                                    <li>The ‘main’ view on the right that shows the difference between your changes and
+                                        the last commit</li>
+                                    <li>The files you have changed on the left. The checkbox being checked means the
+                                        file is <strong>staged</strong> and will be a part of the next commit. Selecting
+                                        a file here will bring it into the main view, and you can see the changes made
+                                        to that file</li>
+                                    <li>The bottom left is where you add a message and optional description to your
+                                        commit</li>
+                                </ul>
+
+                                <!-- <h6>Committing</h6> -->
+
+                                We can go ahead and ‘commit’ our change. This means that <code>git</code> will
+                                remember what the files look like in our repository at this snapshot in time.
+                                <ol type="1">
+                                    <li>Put your commit message in the box that currently says “Create hello.py”. This
+                                        message should be something that is useful for future programmers who have to
+                                        analyze it. You can put any text here, I would suggest something like “created a
+                                        hello world file”.</li>
+                                    <li>Then, go ahead and hit the “Commit to master”.</li>
+                                </ol>
+                                You should now see “no local changes” in your GitHub Desktop.
+
+                                <h4> Making changes </h4>
+                                Go back to your <code>hello.py</code> file and add a second line that prints ‘It is
+                                not a bug, it is a feature’. Your <code>hello.py</code> should look like this now:
+
+                                <div class="sourceCode" id="cb1">
+                                    <pre
+                                        class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello world, but in git!&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="bu">print</span>(<span class="st">&quot;It is not a bug, it is a feature&quot;</span>)</span></code></pre>
+                                </div>
+                                Back on GitHub Desktop, your screen should look like this
+                                <figure>
+                                    <img style="max-width: 100%;" src="1st-change.png" alt="" />
+                                </figure>
+                                Here we can see what is called a <strong>diff</strong> view, and compare the changes
+                                we have made since our last commit. Go ahead and give this a descriptive commit
+                                message, and commit to master.
+
+                                <h4>Reverting Changes</h4>
+                                Down the line, it turns out that the change you just made is destroying the
+                                production database. Luckily, because we are using <code>git</code>, we can easily
+                                revert to any version of our software, so we can revert it to a known working state.
+
+                                <ol type="1">
+                                    <li>Because we are going to be modifying the <code>hello.py</code> via
+                                        <code>git</code>, close <code>hello.py</code> from IDLE</li>
+                                    <li>Go to the “History” tab on the left hand side of GitHub Desktop</li>
+                                    <li>Right click on the most recent commit, it should be the one that added the
+                                        <code>print("it is not a bug, it is a feature")</code></li>
+                                    <li>Click on “Revert this Commit”</li>
+                                </ol>
+                                You should see a new commit added to the history that says “Revert (your commit
+                                message here)”. In order to revert a commit, <code>git</code> creates a new commit
+                                that is the ‘opposite’ of the commit you want to revert.
+                                <figure>
+                                    <img style="max-width: 100%;" src="revert.png" alt="" />
+                                </figure>
+                                Now, you can open <code>hello.py</code> again in IDLE, and you should see that it is
+                                back to just <code>print("Hello world, but in git!")</code>.
+
+                                <h4>Submission for in class assignment</h4>
+
+                                Please submit to canvas a screenshot of the history page.
+                                If you used the <code>git</code> from the command line, you can run
+                                <code>git log &gt; gitlog.txt</code> and submit the resulting text file.
+
+                                <hr style="width: 85%; color: #253E6A; border: 1px solid;">
+
+                                <div style="text-align: justify;">
+                                    <h3>Part C: Post Studio Work (DUE & POINTS HERE)</h3>
+
+                                    Now that we have our git repository local to our computer, the next step is going
+                                    to be making it available via GitHub. Because we are using GitHub desktop, this
+                                    will be really easy!
+                                    <ol type="1">
+                                        <li>If you don’t have it open already, open GitHub desktop. If the repository we
+                                            created in the previous part is not what is listed in the very top left,
+                                            click on it and select the name of the repo you created in the previous
+                                            part.</li>
+                                        <li>On the top menu bar, click on the option that says “Publish this Repository”
+                                        </li>
+                                        <li>All of the default settings should be fine, but it is <strong><em>very
+                                                    important that your code is private</em></strong>, because we will
+                                            be uploading our 101 and 102 labs to here</li>
+                                    </ol>
+                                    <figure>
+                                        <img style="max-width: 100%;" src="publish-repo.png" alt="" />
+                                    </figure>
+                                    Go ahead and click on “Publish Repository” now.
+                                    We are going to view our code on the GitHub website. This will make it clear what
+                                    is on our local repo, and what has been pushed to master. You can do this by
+                                    navigating to
+                                    <code>https://github.com/&lt;yourusername&gt;/csci-101-102-labs</code>. Right
+                                    now, it should look identical to the code you have in your local repository. If
+                                    you try and visit it and you get a “page not found error”, sign into GitHub and
+                                    try again. It should look something like this.
+                                    <figure>
+                                        <img style="max-width: 100%;" src="inital-github.png" alt="" />
+                                    </figure>
+
+                                    <h4>Adding our Python Code</h4>
+
+                                    So we have a large number of files to work with, we are going to be adding our
+                                    old 101 and 102 labs to this local repository.
+                                    <ol type="1">
+                                        <li>Create two folders, a <code>101</code> and a <code>102</code> folder from
+                                            Finder / File explorer</li>
+                                        <li><strong>Copy</strong> your 101 labs to the 101 folder, and your 102 labs to
+                                            your 102 folder</li>
+                                        <li>Open GitHub Desktop</li>
+                                        <li>Select all of your <strong>101</strong> labs only on the left hand side
+                                            (remember, what is selected is what is staged for commit)</li>
+                                        <li>In the commit summary area, write something like ‘added 101 labs’</li>
+                                        <li>Verify that your GitHub Desktop looks something similar to mine. I don’t
+                                            have all of the 101 and 102 labs, so the number of files / the name of your
+                                            files should vary from mine.</li>
+                                    </ol>
+                                    <figure>
+                                        <img style="max-width: 100%;" src="101-selected-only.png" alt="" />
+                                    </figure>
+                                    Lets stop a minute and think about what we do before we hit ‘commit to master’.
+                                    As we discussed earlier, committing creates a snapshot of what our files look
+                                    like at this current time. This means that the content of the files that we have
+                                    staged right now are going to be saved by <code>git</code> forever. With that
+                                    being said, go ahead and press ‘commit to master’
+
+                                    <h4>Syncing with GitHub</h4>
+
+                                    Sign back into GitHub and go to your <code>csci-101-102-labs</code> repository.
+                                    Look at the files are there. Are they what you expected? They should not have
+                                    changed since the last time you looked at GitHub, this is because when we commit
+                                    we are <strong>only making changes to our local repository</strong>
+                                    How do we make our code available on GitHub? This is called pushing. You can push
+                                    to GitHub from GitHub Desktop by pressing the “Push origin” on the top bar.
+                                    Now, refresh <code>github.com/&lt;yourusername&gt;/csci-101-102-labs</code>. You
+                                    should see something like this.
+                                    <figure>
+                                        <img style="max-width: 100%;" src="github-after-101.png" alt="" />
+                                    </figure>
+                                    Take a few minutes and think about what this means. Our <code>101</code> folder
+                                    is here, but our <code>102</code> folder is not. This is because we only
+                                    commited the changes to our <code>101</code> folder.
+
+                                    <h4>Trying it on your own</h4>
+                                    <ol type="1">
+                                        <li>On your own, add your 102 labs, commit, and push.</li>
+                                        <li>Verify that what you see at
+                                            <code>github.com/&lt;yourusername&gt;/csci-101-102-labs</code> is the same
+                                            as what you see on GitHub Desktop, and you have no uncommitted changes on
+                                            the left.</li>
+                                    </ol>
+
+                                    <h4>Using a <code>.gitignore</code></h4>
+
+                                    What should we do about files that are in our repository but we don’t want
+                                    <code>git</code> to ever commit them? Sure, we can make sure that we never check
+                                    the check box in GitHub Desktop, but that is annoying, and maybe you have a lot
+                                    of files / a whole folder you want to ignore.
+                                    <blockquote>
+                                        Side note: in practice, this is most often used to stop having binary files
+                                        in your <code>git</code> repository. Binary files are the name for the
+                                        actual machine code instructions for your computer runs when you run a
+                                        program. <code>git</code> works because it just tracks the difference
+                                        between files, but because binary files are not plain text, <code>git</code>
+                                        would have to save the binary exactly as you generated it each time. This
+                                        will quickly make our <code>git</code> repositories become very large, and
+                                        theoretically the source code should contain everything needed to generate
+                                        that binary anyways, so it is not adding any additional information. Because
+                                        Python is an <a
+                                            href="https://en.wikipedia.org/wiki/Interpreted_language">interpreted</a>
+                                        language, it creates no binaries.
+                                    </blockquote>
+                                    In this scenario, we want to put the 101 course topics in the same folder but we
+                                    don’t want it to be part of our <code>git</code> repository (in reality a small
+                                    PDF is not a concerning thing to have in a <code>git</code> repository)
+                                    <ol type="1">
+                                        <li>Download the 101 course topics <a
+                                                href="http://cs-courses.mines.edu/csci101/static/101-Topics.pdf">here</a>
+                                        </li>
+                                        <li>Place that PDF in your <code>csci-101-102-labs</code> folder on your
+                                            computer</li>
+                                        <li>Open GitHub Desktop, and open the repository if it is not open already</li>
+                                        <li>You should see the PDF on the left sidebar of GitHub Desktop. Right click on
+                                            it and select “ignore file”. Notice how GitHub Desktop allows you to ignore
+                                            all PDFs if we wanted to.</li>
+                                    </ol>
+                                    Your GitHub Desktop should now look something like this:
+                                    <figure>
+                                        <img style="max-width: 100%;" src="after-ignore.png" alt="" />
+                                    </figure>
+                                    Now, you can see that GitHub Desktop modified out <code>.gitignore</code> for us.
+                                    A <code>.gitignore</code> is a plain text file that tells <code>git</code> which
+                                    files not to ever track. By adding <code>101-Topics.pdf</code>, <code>git</code>
+                                    will ignore any file with that exact name. If you remember when we first created
+                                    this repository, we asked GitHub Desktop to use a Python <code>.gitignore</code>
+                                    for us, which is why there are other lines in this file.
+                                    <code>.gitignore</code> is a file that is tracked by <code>git</code>, so lets go
+                                    ahead and commit with some message similar to “added 101 topics to the
+                                    gitignore”, then push.
+                                    Now, go to GitHub and look at what files GitHub has. Note that this does not
+                                    include the <code>101-Topics.pdf</code>. If someone where to come and download
+                                    your repository, <code>101-Topics.pdf</code> would not be downloaded with it -
+                                    it only exists on your own computer.
+
+                                    <h5 id="when-to-add-something-to-your-.gitignore">When to add something to your
+                                        <code>.gitignore</code></h5>
+
+                                    There is not 100% guide for when to add something to your
+                                    <code>.gitignore</code>, but here are some rules of thumbs that I find useful.
+
+                                    <ul>
+                                        <li>If it is a file that can be generated completely from other files, aka
+                                            output files</li>
+                                        <li>If it is a large binary file that is frequently changing</li>
+                                        <li>Temporary / other generated files</li>
+                                    </ul>
+                                    In general, if you select the <code>.gitignore</code> when creating your
+                                    repository for the language you are using (if you forget you can download them
+                                    here: <a
+                                        href="https://github.com/github/gitignore">https://github.com/github/gitignore</a>),
+                                    you should typically be okay. Nothing you do in CSCI 101 or 102 is heavy enough
+                                    that you have to worry about the sizes of your <code>git</code> repositories.
+
+                                    <h4>Submission for part 2</h4>
+
+                                    Please submit to canvas a screenshot of the history page.
+                                    If you used the <code>git</code> from the command line, you can run
+                                    <code>git log &gt; gitlog.txt</code> and submit the resulting text file.
+
+
+                                </div>
+                            </div>
+                            <hr style="width: 85%; color: #253E6A; border: 1px solid;">
+                            <img src="102-Git-Workshop_files/course_logo.png" alt="CSCI 101 Logo" class="logo">
+                            <img src="102-Git-Workshop_files/dept_logo.png" alt="CS At Mines Logo" class="logo">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="header" style="height:30px" colspan="2">
+                        <div style="text-align:right; padding-right:25px; display:inline;"><a href="#top">[Top]</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <a href="http://validator.w3.org/check?uri=http%3A%2F%2F" target="_blank">
+            <img style="border:0;width:88px;height:31px" src="102-Git-Workshop_files/valid-html401.png"
+                alt="Valid HTML 4.01 Strict">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2F&amp;profile=css3&amp;usermedium=all&amp;warning=1&amp;vextwarning="
+            target="_blank">
+            <img style="border:0;width:88px;height:31px" src="102-Git-Workshop_files/vcss.gif" alt="Valid CSS!">
+        </a>
+        <a href="http://achecker.ca/checker/index.php" title="Explanation of WCAG 2.0 Level Triple-A Conformance"
+            target="_blank">
+            <img style="border:0;width:88px;height:31px" src="102-Git-Workshop_files/wcag2AAA.png"
+                alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
+        </a>
+    </div>
+
+
+</body>
+
+</html>

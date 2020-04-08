@@ -1,0 +1,131 @@
+bodyclass { font-size: 13px; color: #c0c0c0; font-family: Arial, Helvetica, sans-serif; }
+.bodyclass a:hover { color: #253E6A; text-decoration:none; }
+
+td {color: #253E6A; font-family: Arial, Helvetica, sans-serif;}
+
+a {color: #D1482A; font-weight:bold; text-decoration:none;}
+
+a:hover, #more-articles:hover {color: #ffffff; text-decoration:underline;}
+
+h1 { font-family: Arial, Helvetica, sans-serif; color: #c0c0c0; }
+h2 { font-family: Arial, Helvetica, sans-serif; color: #c0c0c0; }
+h3 { font-family: Arial, Helvetica, sans-serif; color: #253E6A; }
+
+p { line-height:1.5; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-align:justify; }
+
+img { border:0 }
+
+img.logo {
+	max-width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/** TEXT COLORS **/
+
+/* Core */
+body {background: #c3e4ac;}
+
+td.header { text-align:center; border-style:solid none solid none; border-color:#c0c0c0; border-width:2px; background-color:#c0c0c0;}
+
+.header a { color: #D1482A; }
+.header a:hover { color: #ffffff; text-decoration:none; }
+
+td.mainContent { background-color:#ffffff; color:#253E6A; font-family: Arial, Helvetica, sans-serif; padding:15px; vertical-align:top; line-height:1.5;}
+
+.mainContent a:hover { color: #253E6A; text-decoration:none; }
+
+li { text-align:justify; }
+
+.box {
+        padding: 20px;
+        margin: 20px;
+        background-color: #ffffff;
+        border: solid #FF3333;
+        min-height: 250px;
+}
+
+.center-text {
+        text-align: center;
+}
+
+.left {
+        float: left;
+}
+
+.right {
+        float: right;
+}
+
+.mentor {
+        border: solid #ce6b06;
+        height: 220px;
+        margin: 10px 20px;
+}
+
+div.code {
+    border: 1px solid #090;
+    padding: 20px;
+    background-color: #CFC;
+    text-align:left;
+    font-family:monospace;
+    font-size:14px;
+}
+
+div.codeError {
+    border: 1px solid #900;
+    padding: 20px;
+    background-color: #FCC;
+    text-align:left;
+    font-family:monospace;
+    font-size:14px;
+}
+
+div.codeOutput {
+    border: 1px solid #2d2d2d;
+    padding: 20px;
+    background-color: #d2d2d2;
+    text-align:left;
+    font-family:monospace;
+    font-size:14px;
+}
+
+
+td.leaderRowA { background-color: #ffffff; }
+
+td.leaderRowB { background-color: #a8a8a8; }
+
+td.schedule {text-align:center; vertical-align:middle;}
+
+td.scheduleRowA {text-align:center; vertical-align:middle; background-color:#ffffff;}
+
+td.scheduleRowB {text-align:center; vertical-align:middle; background-color:#e0e0e0;}
+
+td.scheduleRowCurr {text-align:center; vertical-align:middle; background-color:#ffff00;}
+
+td.scheduleHeader {text-align:center; font-weight:bold; background-color:#c0c0c0;}
+
+td.officeHours {text-align:center; vertical-align:middle;}
+
+td.officeHoursInstructor {text-align:center; vertical-align:middle; background-color:#92A2BD; color:#000000;}
+
+td.officeHoursInstructor102 {text-align:center; vertical-align:middle; background-color:#fffac8; color:#000000;}
+
+td.officeHoursLeadMentor {text-align:center; vertical-align:middle; background-color:#fabebe; color:#000000;}
+
+td.officeHoursMentor {text-align:center; vertical-align:middle; background-color:#f58231; color:#000000;}
+
+td.officeHoursTime {text-align:center; font-weight:bold; background-color:#c0c0c0;}
+
+.schedule a {color:#D1482A; text-decoration:none;}
+.schedule a:hover {color:#D1482A; text-decoration:underline;}
+
+.scheduleRowB a {color:#D1482A; text-decoration:none;}
+.scheduleRowB a:hover {color:#D1482A; text-decoration:underline;}
+
+td.gradingRubric {text-align:center; vertical-align:middle; padding: 8px;}
+
+/* Grading Table */
+td.gradeScaleHeader {text-align:center; font-weight:bold; background-color:#c0c0c0;}
+td.gradeScale {text-align:center; vertical-align:middle;}
+

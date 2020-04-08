@@ -14,12 +14,12 @@ For this tutorial, we are going to be using [Github Desktop](https://desktop.git
 1. After opening GitHub Desktop, sign into your GitHub account
 1. You can configure how you would like to appear, but I suggest keeping the defaults.
 
+## During Studio
+
 ### **FOR PEOPLE WHO ALREADY KNOW GIT**
 
 If you have a lot of experience using the `git` command line and don't want to learn a new client, you can follow along with this lab and submit a `git log > gitlog.txt` instead of a screenshot.
 If that means nothing to you, you should probably use GitHub Desktop!
-
-## During Studio
 
 ### Creating your First Repo
 
